@@ -1,0 +1,10 @@
+# Navigate
+alias ll="ls -alh"
+
+# Shell editing
+alias shedit="vim ~/.zshrc"
+alias shource="source ~/.zshrc" 
+
+# Git
+alias g=git
+

@@ -1,0 +1,50 @@
+[user]
+	email = irvino.djuana@gmail.com
+	name = Irvino Djuana
+[http]
+	emptyAuth = true
+[pager]
+	branch = false
+[core]
+	excludesFile = /Users/irvinodjuana/.gitignore
+[pull]
+	rebase = true
+[alias]
+	# status
+	s = status
+        st = status
+	
+	# diff
+	df = diff
+	conflicts = diff --name-only --diff-filter=U	
+	
+	# restore
+	rs = restore --staged
+
+	# branches
+	co = checkout
+	b = branch -vv
+	br = branch -vv
+
+	# push & pull
+	pushf = push -u origin HEAD
+	pr = pull --rebase
+
+	# committing
+	c = commit
+	cm = commit -m
+	cane = commit --amend --no-edit
+		
+	# cherry-pick
+	cp = cherry-pick
+
+	# rebasing
+	rb = rebase
+	rbc = rebase --continue
+	rba = rebase --abort
+
+	# log view
+	l = log --oneline --graph --color
+	lg = log --graph --date=relative --pretty=format:'%C(cyan)%h: %C(yellow) - %an - %Cgreen %C(cyan)%ar:%Creset%C(yellow)%d%Creset %n%s%n'
+	ll = log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+
